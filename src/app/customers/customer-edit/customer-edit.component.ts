@@ -48,16 +48,22 @@ export class CustomerEditComponent implements OnInit {
     })
   }
 
-  updateCustomer() {
-    const updatedCustomer: Customer = {
-      name: this.customerForm.get("name").value,
-      phone: this.customerForm.get("phone").value,
-      address: this.customerForm.get("address").value,
-      membership: this.customerForm.get("membership").value,
-      id: this.customerForm.get("id").value
-    };
+  updateCustomer() {    
+    // const updatedCustomer: Customer = {
+    //   id: this.customerForm.get("id").value,
+    //   name: this.customerForm.get("name").value,
+    //   phone: this.customerForm.get("phone").value,
+    //   address: this.customerForm.get("address").value,
+    //   membership: this.customerForm.get("membership").value
+    // };
+    const updatedCustomer = this.customerForm.value;
+    console.log(updatedCustomer);
+    this.resetForm();
+    this.store.dispatch(new customerActions.UpdateCustomer(updatedCustomer)); 
+  }
 
-    this.store.dispatch(new customerActions.UpdateCustomer(updatedCustomer))
+  resetForm() {
+    this.customerForm.reset();
   }
 
 }

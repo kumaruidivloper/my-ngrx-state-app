@@ -31,7 +31,6 @@ export class CustomerAddComponent implements OnInit {
     });
   }
 
-
   createCustomer() {
     const newCustomer: Customer = {
       name: this.customerForm.get("name").value,

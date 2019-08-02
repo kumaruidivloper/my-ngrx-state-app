@@ -38,7 +38,7 @@ export class CustomerListComponent implements OnInit {
   editCustomer(customer: Customer) {
     this.store.dispatch(new customerActions.LoadCustomer(customer.id));
     console.log(customer.id);
-    this.router.navigate(['edit', customer.id])
+    // this.router.navigate(['edit', customer.id])
   }
 
 }

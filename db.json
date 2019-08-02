@@ -1,17 +1,17 @@
 {
   "customers": [
     {
-      "name": "Mary Johnson",
-      "phone": "918928392098",
-      "address": "123 Sun Street",
-      "membership": "Platinum",
+      "name": "Kumar ",
+      "phone": "9945729262",
+      "address": "B004,SV HEIGHTS APARTMENTS,GROUND FLR,  CHANNASANDRA,WHITEFIELD,NEAR HOPEFARM SIGNAL",
+      "membership": "Pro",
       "id": 1
     },
     {
-      "name": "Jhonson Doe",
-      "phone": "808937482734",
-      "address": "893 Main Voulevard",
-      "membership": "Pro",
+      "name": "sdsa",
+      "phone": "434324324rssds",
+      "address": "B004,SV HEIGHTS APARTMENTS,GROUND FLR,  CHANNASANDRA,WHITEFIELD,NEAR HOPEFARM SIGNAL",
+      "membership": "Basic",
       "id": 2
     }
   ]

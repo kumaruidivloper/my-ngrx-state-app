@@ -1,27 +1,29 @@
 # MyNgrxStoreApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.4.
+## App Setup
+Step1: ng new [AppName] --style=scss --routing --prefix myprefix
 
-## Development server
+## Install Bootstrap
+Step3: npm install bootstrap --save
+Step4: Open angular.json
+"styles": [
+  "src/styles.scss",
+  "node_modules/bootstrap/dist/css/bootstrap.min.css"
+],  ----- [or] -------
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+There are many ways to do that. The simpest method is by using the [src/styles.css]file and adding the following code:
+URL: https://www.techiediaries.com/angular-bootstrap-ui/
+@import "~bootstrap/dist/css/bootstrap.css";
 
-## Code scaffolding
+## NGRX schematics:
+https://www.intertech.com/Blog/ngrx-tutorial-quickly-adding-ngrx-to-your-angular-6-project/
+Scaffolding library for Angular applications using NgRx libraries. 
+@ngrx/schematics provides CLI commands for generating files when building new NgRx feature areas and expanding existing ones.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+npm install @ngrx/schematics --save-dev
 
-## Build
+## Install the rest of NgRx:
+npm install @ngrx/store @ngrx/effects @ngrx/store-devtools @ngrx/router-store --save
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## NGRX Flow Diagram
+![Ngrx-Image](https://user-images.githubusercontent.com/30646609/62344444-b22be680-b50b-11e9-85ae-7ce70f588995.JPG)

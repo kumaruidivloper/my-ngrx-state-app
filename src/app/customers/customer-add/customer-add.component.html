@@ -24,5 +24,5 @@
         <option>Platinum</option>
       </select>
     </div>
-    <button type="submit" class="btn btn-primary mb-2">Add Customer</button>
+    <button type="submit" class="btn btn-primary mb-2" [disabled]="!customerForm.valid">Add Customer</button>
   </form>
